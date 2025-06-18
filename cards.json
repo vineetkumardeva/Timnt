@@ -1,0 +1,222 @@
+[
+  {
+    "name": "HDFC Millennia",
+    "issuer": "HDFC Bank",
+    "joining_fee": 1000,
+    "annual_fee": 1000,
+    "reward_type": "Cashback",
+    "reward_rate": "5% on online spends",
+    "eligibility": "Monthly income ₹25,000+",
+    "perks": ["Lounge access", "Amazon vouchers"],
+    "apply_link": "#"
+  },
+  {
+    "name": "SBI SimplyCLICK",
+    "issuer": "SBI",
+    "joining_fee": 500,
+    "annual_fee": 500,
+    "reward_type": "Cashback",
+    "reward_rate": "1.25% on all spends",
+    "eligibility": "Monthly income ₹20,000+",
+    "perks": ["Fuel surcharge waiver"],
+    "apply_link": "#"
+  },
+  {
+    "name": "Axis Ace",
+    "issuer": "Axis Bank",
+    "joining_fee": 499,
+    "annual_fee": 499,
+    "reward_type": "Cashback",
+    "reward_rate": "5% on Google Pay, 2% on others",
+    "eligibility": "Monthly income ₹30,000+",
+    "perks": ["Cashback", "Dining offers"],
+    "apply_link": "#"
+  },
+  {
+    "name": "ICICI Amazon Pay",
+    "issuer": "ICICI Bank",
+    "joining_fee": 0,
+    "annual_fee": 0,
+    "reward_type": "Cashback",
+    "reward_rate": "5% on Amazon (Prime), 1% others",
+    "eligibility": "Monthly income ₹20,000+",
+    "perks": ["No annual fee", "Amazon vouchers"],
+    "apply_link": "#"
+  },
+  {
+    "name": "HDFC Regalia",
+    "issuer": "HDFC Bank",
+    "joining_fee": 2500,
+    "annual_fee": 2500,
+    "reward_type": "Travel Points",
+    "reward_rate": "4 points per ₹150 spent",
+    "eligibility": "Monthly income ₹70,000+",
+    "perks": ["Lounge access", "Travel concierge"],
+    "apply_link": "#"
+  },
+  {
+    "name": "Axis Vistara Infinite",
+    "issuer": "Axis Bank",
+    "joining_fee": 10000,
+    "annual_fee": 10000,
+    "reward_type": "Air Miles",
+    "reward_rate": "6 CV points per ₹200 spent",
+    "eligibility": "Monthly income ₹1,00,000+",
+    "perks": ["Business class ticket", "Lounge access"],
+    "apply_link": "#"
+  },
+  {
+    "name": "SBI Card ELITE",
+    "issuer": "SBI",
+    "joining_fee": 4999,
+    "annual_fee": 4999,
+    "reward_type": "Points",
+    "reward_rate": "2 points per ₹100",
+    "eligibility": "Monthly income ₹83,000+",
+    "perks": ["Lounge access", "Movie tickets"],
+    "apply_link": "#"
+  },
+  {
+    "name": "ICICI Coral Credit Card",
+    "issuer": "ICICI Bank",
+    "joining_fee": 500,
+    "annual_fee": 500,
+    "reward_type": "Points",
+    "reward_rate": "2 points per ₹100",
+    "eligibility": "Monthly income ₹25,000+",
+    "perks": ["Lounge access", "Fuel waiver"],
+    "apply_link": "#"
+  },
+  {
+    "name": "AU Small Finance Bank Zenith",
+    "issuer": "AU Bank",
+    "joining_fee": 2999,
+    "annual_fee": 2999,
+    "reward_type": "Points",
+    "reward_rate": "1.25% reward rate",
+    "eligibility": "Monthly income ₹60,000+",
+    "perks": ["Lounge access", "Travel concierge"],
+    "apply_link": "#"
+  },
+  {
+    "name": "IndusInd Platinum Aura",
+    "issuer": "IndusInd Bank",
+    "joining_fee": 500,
+    "annual_fee": 500,
+    "reward_type": "Cashback",
+    "reward_rate": "1.5% on groceries, fuel",
+    "eligibility": "Monthly income ₹25,000+",
+    "perks": ["Fuel surcharge waiver", "Dining discounts"],
+    "apply_link": "#"
+  },
+  {
+    "name": "HSBC Cashback Credit Card",
+    "issuer": "HSBC",
+    "joining_fee": 0,
+    "annual_fee": 0,
+    "reward_type": "Cashback",
+    "reward_rate": "1.5% online, 1% offline",
+    "eligibility": "Monthly income ₹30,000+",
+    "perks": ["No annual fee", "Dining offers"],
+    "apply_link": "#"
+  },
+  {
+    "name": "IDFC FIRST Millennia",
+    "issuer": "IDFC Bank",
+    "joining_fee": 0,
+    "annual_fee": 0,
+    "reward_type": "Points",
+    "reward_rate": "3x–10x reward points",
+    "eligibility": "Monthly income ₹25,000+",
+    "perks": ["Movie discounts", "Lounge access"],
+    "apply_link": "#"
+  },
+  {
+    "name": "Standard Chartered Smart",
+    "issuer": "Standard Chartered",
+    "joining_fee": 499,
+    "annual_fee": 499,
+    "reward_type": "Cashback",
+    "reward_rate": "2% on online, 1% others",
+    "eligibility": "Monthly income ₹30,000+",
+    "perks": ["EMI conversion", "Dining offers"],
+    "apply_link": "#"
+  },
+  {
+    "name": "Kotak Royale Signature",
+    "issuer": "Kotak Mahindra Bank",
+    "joining_fee": 999,
+    "annual_fee": 999,
+    "reward_type": "Points",
+    "reward_rate": "4 points per ₹150",
+    "eligibility": "Monthly income ₹50,000+",
+    "perks": ["Airport lounge", "Dining offers"],
+    "apply_link": "#"
+  },
+  {
+    "name": "RBL ShopRite",
+    "issuer": "RBL Bank",
+    "joining_fee": 500,
+    "annual_fee": 500,
+    "reward_type": "Points",
+    "reward_rate": "2.5% on groceries",
+    "eligibility": "Monthly income ₹20,000+",
+    "perks": ["Fuel waiver", "Supermarket offers"],
+    "apply_link": "#"
+  },
+  {
+    "name": "Yes Prosperity Edge",
+    "issuer": "Yes Bank",
+    "joining_fee": 399,
+    "annual_fee": 399,
+    "reward_type": "Points",
+    "reward_rate": "6 points per ₹200",
+    "eligibility": "Monthly income ₹35,000+",
+    "perks": ["Dining, travel perks"],
+    "apply_link": "#"
+  },
+  {
+    "name": "HSBC Premier Mastercard",
+    "issuer": "HSBC",
+    "joining_fee": 0,
+    "annual_fee": 0,
+    "reward_type": "Points",
+    "reward_rate": "1 point per ₹100",
+    "eligibility": "Premier customer",
+    "perks": ["International lounge access"],
+    "apply_link": "#"
+  },
+  {
+    "name": "IDFC FIRST Wealth",
+    "issuer": "IDFC FIRST Bank",
+    "joining_fee": 0,
+    "annual_fee": 0,
+    "reward_type": "Points",
+    "reward_rate": "3x–10x points",
+    "eligibility": "Monthly income ₹60,000+",
+    "perks": ["Golf access", "Lounge access"],
+    "apply_link": "#"
+  },
+  {
+    "name": "Axis Flipkart",
+    "issuer": "Axis Bank",
+    "joining_fee": 500,
+    "annual_fee": 500,
+    "reward_type": "Cashback",
+    "reward_rate": "5% on Flipkart, 1.5% others",
+    "eligibility": "Monthly income ₹25,000+",
+    "perks": ["Flipkart vouchers", "Dining offers"],
+    "apply_link": "#"
+  },
+  {
+    "name": "HDFC Diners Club Privilege",
+    "issuer": "HDFC Bank",
+    "joining_fee": 2500,
+    "annual_fee": 2500,
+    "reward_type": "Points",
+    "reward_rate": "4 points per ₹150",
+    "eligibility": "Monthly income ₹1,00,000+",
+    "perks": ["Lounge access", "Golf, Zomato Pro"],
+    "apply_link": "#"
+  }
+]
