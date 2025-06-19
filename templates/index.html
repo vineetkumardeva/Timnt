@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Credit Card Recommender</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h2>Find Your Best Credit Card</h2>
+  <form id="recommend-form">
+    <label>Monthly Income:</label><br>
+    <input type="number" id="income" required /><br><br>
+
+    <label>Spending Categories:</label><br>
+    <input type="checkbox" value="fuel" class="spending"> Fuel<br>
+    <input type="checkbox" value="travel" class="spending"> Travel<br>
+    <input type="checkbox" value="groceries" class="spending"> Groceries<br><br>
+
+    <label>Preferred Benefits:</label><br>
+    <select id="benefits" multiple>
+      <option value="cashback">Cashback</option>
+      <option value="travel points">Travel Points</option>
+      <option value="lounge access">Lounge Access</option>
+    </select><br><br>
+
+    <label>Credit Score (or leave blank):</label><br>
+    <input type="number" id="credit_score" /><br><br>
+
+    <button type="submit">Get Recommendations</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

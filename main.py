@@ -5,6 +5,8 @@ from flask import Flask, request, jsonify
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 
+from flask import render_template
+
 app = Flask(__name__)
 
 # Load your credit cards from a static JSON file
@@ -16,7 +18,7 @@ groq_api_key = os.getenv("GROQ_API_KEY")
 
 # Initialize the LangChain Groq model
 llm = ChatGroq(api_key=SecretStr(groq_api_key) if groq_api_key else None,
-               model="mixtral-8x7b-32768",
+               model="llama3-70b-8192",
                temperature=0.5,
                stop_sequences=None)
 
@@ -31,23 +33,37 @@ prompt_template = ChatPromptTemplate.from_messages([
 ])
 
 
+@app.route("/", methods=["GET"])
+def home():
+    return render_template("index.html")
+
+
 @app.route("/recommend", methods=["POST"])
 def recommend_cards():
     user_data = request.json
+    print("📥 Received user data:", user_data)
 
-    formatted_prompt = prompt_template.format_messages(
-        user_data=json.dumps(user_data), cards=json.dumps(cards))
+    try:
+        formatted_prompt = prompt_template.format_messages(
+            user_data=json.dumps(user_data),
+            cards=json.dumps(cards)
+        )
 
-    response = llm.invoke(formatted_prompt)
+        # Get the LLM response
+        response = llm.invoke(formatted_prompt)
 
-    return jsonify({"recommendations": response.content})
+        # Print response content to console
+        print("🧠 LLM Response content:", response.content)
 
-@app.route("/", methods=["GET"])
-def hello():
-    return "✅ Credit Card Recommender API is running. Use POST /recommend with JSON data."
+        # Return it to frontend
+        return jsonify({"recommendations": response.content})
+
+    except Exception as e:
+        print("❌ Error generating recommendations:", str(e))
+        return jsonify({"error": "Failed to generate recommendations"}), 500
+
+
 
 # Run the Flask server (Replit-compatible)
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
-
-
