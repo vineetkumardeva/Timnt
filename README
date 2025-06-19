@@ -1,0 +1,64 @@
+# Credit Card Recommender (LLM-Powered Prototype)
+
+A conversational credit card recommendation web app built with **Flask**, **LangChain + Groq LLM**, and a static **cards database**.  
+It collects user preferences via a simple webpage and suggests the top 3 cards tailored to their needs.
+
+---
+
+## 🚀 Demo
+
+Try the live app here:  
+👉 **https://<your-repl-name>.<your-username>.repl.co**
+
+![Demo GIF](demo.gif)
+
+---
+
+## 🧭 How It Works
+
+1. **Frontend**  
+   - A one-page form (`index.html`) asks for:
+     - Monthly income
+     - Spending habits (fuel, travel, groceries)
+     - Preferred benefits (cashback, lounge access)
+     - Credit score  
+   - On form submission, it sends data to the backend via `/recommend`.
+
+2. **Backend**  
+   - Built with **Flask** (`main.py`) and serves routes:
+     - `GET /` → serves the form
+     - `POST /recommend` → processes user data
+   - Loads `cards.json` containing 20 Indian credit cards with details (name, issuer, fees, perks).
+   - Uses **LangChain** and **ChatGroq** (`llama3-70b-8192`) to:
+     - Build a prompt combining user preferences and available cards
+     - Generate the top 3 personalized recommendations
+
+3. **Output**  
+   - The LLM returns recommendations with:
+     - Card name
+     - Reason for fit
+     - Estimated yearly rewards  
+   - Shown to the user on the same page.
+
+---
+
+## ⚙️ Tech Stack
+
+- Python + Flask
+- LangChain with ChatGroq (Groq LLM API)
+- Groq model: `llama3-70b-8192` (free, powerful)
+- Static card data via `cards.json`
+- Frontend: HTML, CSS, JavaScript
+
+---
+
+## 📥 Setup & Run Locally
+
+```bash
+git clone https://github.com/yourusername/credit-card-recommender.git
+cd credit-card-recommender
+
+pip install -r requirements.txt
+export GROQ_API_KEY="your-groq-api-key"
+
+python main.py
