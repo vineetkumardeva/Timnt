@@ -3,8 +3,8 @@
 A conversational credit card recommendation web app built with **Flask**, **LangChain + Groq LLM**, and a static **cards database**.  
 It collects user preferences via a simple webpage and suggests the top 3 cards tailored to their needs.
 
-##Demo = demo.mp4 (in root folder) 
-https://timnt.vercel.app/
+LINK = https://timnt.vercel.app/
+DEMO = https://drive.google.com/file/d/1RuS9_61N0Zrbo7Gqp3llaikwouNo8aAg/view?usp=drive_link 
 
 ## 🧭 How It Works
 
@@ -44,21 +44,16 @@ https://timnt.vercel.app/
 
 ---
 
-🚀 Installation & Run
+Installation & Run
 
-bash
+```bash
 git clone https://github.com/vineetkumardeva/Timnt.git
 cd Timnt
 python -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
 pip install -r requirements.txt
+```
 
-
-Got it! For **clear documentation of agent flow and prompt design** in your README, here’s a simple way to explain it based on your code:
-
----
-
-## Agent Flow & Prompt Design
 
 ### Agent Flow
 
@@ -83,8 +78,6 @@ Got it! For **clear documentation of agent flow and prompt design** in your READ
 
    * Flask sends the LLM’s response back as JSON.
    * Frontend displays the recommendations to the user.
-
----
 
 ### Prompt Design
 
