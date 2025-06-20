@@ -1,28 +1,23 @@
+from flask import Flask, request, jsonify, render_template
 import os
-from pydantic import SecretStr
 import json
-from flask import Flask, request, jsonify
+from pydantic import SecretStr
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 
-from flask import render_template
-
 app = Flask(__name__)
 
-# Load your credit cards from a static JSON file
+# Load cards
 with open('cards.json', 'r') as f:
     cards = json.load(f)
 
-# Load Groq API key from environment variable (set in Replit secrets)
 groq_api_key = os.getenv("GROQ_API_KEY")
 
-# Initialize the LangChain Groq model
 llm = ChatGroq(api_key=SecretStr(groq_api_key) if groq_api_key else None,
                model="llama3-70b-8192",
                temperature=0.5,
                stop_sequences=None)
 
-# Create a structured prompt using LangChain's ChatPromptTemplate
 prompt_template = ChatPromptTemplate.from_messages([
     ("system", "You are a credit card recommendation expert."),
     ("human",
@@ -32,38 +27,22 @@ prompt_template = ChatPromptTemplate.from_messages([
      )
 ])
 
-
 @app.route("/", methods=["GET"])
 def home():
     return render_template("index.html")
 
-
 @app.route("/recommend", methods=["POST"])
 def recommend_cards():
     user_data = request.json
-    print("📥 Received user data:", user_data)
-
     try:
         formatted_prompt = prompt_template.format_messages(
             user_data=json.dumps(user_data),
             cards=json.dumps(cards)
         )
-
-        # Get the LLM response
         response = llm.invoke(formatted_prompt)
-
-        # Print response content to console
-        print("🧠 LLM Response content:", response.content)
-
-        # Return it to frontend
         return jsonify({"recommendations": response.content})
-
     except Exception as e:
-        print("❌ Error generating recommendations:", str(e))
         return jsonify({"error": "Failed to generate recommendations"}), 500
 
-
-
-# Run the Flask server (Replit-compatible)
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080)
+# Export the app for Vercel
+# Do NOT run app.run()
