@@ -36,3 +36,9 @@ form.addEventListener("submit", async (e) => {
     resultDiv.innerHTML = "❌ Error: " + err.message;
   }
 });
+const restartBtn = document.getElementById("restart-btn");
+
+restartBtn.addEventListener("click", () => {
+  form.reset();
+  resultDiv.innerHTML = "";
+});
