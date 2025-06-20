@@ -4,6 +4,7 @@ A conversational credit card recommendation web app built with **Flask**, **Lang
 It collects user preferences via a simple webpage and suggests the top 3 cards tailored to their needs.
 
 ##Demo = demo.mp4 (in root folder) 
+https://timnt.vercel.app/
 
 ## 🧭 How It Works
 
