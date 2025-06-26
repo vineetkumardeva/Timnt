@@ -8,7 +8,8 @@
     "reward_rate": "5% on online spends",
     "eligibility": "Monthly income ₹25,000+",
     "perks": ["Lounge access", "Amazon vouchers"],
-    "apply_link": "#"
+    "apply_link": "#",
+    "image_url": "https://cdn.cardexpert.in/hdfc-millennia-front.png"
   },
   {
     "name": "SBI SimplyCLICK",
@@ -19,7 +20,8 @@
     "reward_rate": "1.25% on all spends",
     "eligibility": "Monthly income ₹20,000+",
     "perks": ["Fuel surcharge waiver"],
-    "apply_link": "#"
+    "apply_link": "#",
+    "image_url": "https://cdn.yourcdn.com/sbi-simplyclick.png"
   },
   {
     "name": "Axis Ace",
@@ -27,10 +29,11 @@
     "joining_fee": 499,
     "annual_fee": 499,
     "reward_type": "Cashback",
-    "reward_rate": "5% on Google Pay, 2% on others",
+    "reward_rate": "5% on Google Pay, 2% others",
     "eligibility": "Monthly income ₹30,000+",
     "perks": ["Cashback", "Dining offers"],
-    "apply_link": "#"
+    "apply_link": "#",
+    "image_url": "https://cdn.yourcdn.com/axis-ace.png"
   },
   {
     "name": "ICICI Amazon Pay",
@@ -41,7 +44,8 @@
     "reward_rate": "5% on Amazon (Prime), 1% others",
     "eligibility": "Monthly income ₹20,000+",
     "perks": ["No annual fee", "Amazon vouchers"],
-    "apply_link": "#"
+    "apply_link": "#",
+    "image_url": "https://cdn.yourcdn.com/icici-amazon-pay.png"
   },
   {
     "name": "HDFC Regalia",
@@ -52,7 +56,8 @@
     "reward_rate": "4 points per ₹150 spent",
     "eligibility": "Monthly income ₹70,000+",
     "perks": ["Lounge access", "Travel concierge"],
-    "apply_link": "#"
+    "apply_link": "#",
+    "image_url": "https://cdn.yourcdn.com/hdfc-regalia.png"
   },
   {
     "name": "Axis Vistara Infinite",
@@ -61,9 +66,10 @@
     "annual_fee": 10000,
     "reward_type": "Air Miles",
     "reward_rate": "6 CV points per ₹200 spent",
-    "eligibility": "Monthly income ₹1,00,000+",
+    "eligibility": "Monthly income ₹100,000+",
     "perks": ["Business class ticket", "Lounge access"],
-    "apply_link": "#"
+    "apply_link": "#",
+    "image_url": "https://cdn.yourcdn.com/axis-vistara-infinite.png"
   },
   {
     "name": "SBI Card ELITE",
@@ -74,7 +80,8 @@
     "reward_rate": "2 points per ₹100",
     "eligibility": "Monthly income ₹83,000+",
     "perks": ["Lounge access", "Movie tickets"],
-    "apply_link": "#"
+    "apply_link": "#",
+    "image_url": "https://cdn.yourcdn.com/sbi-elite.png"
   },
   {
     "name": "ICICI Coral Credit Card",
@@ -85,18 +92,20 @@
     "reward_rate": "2 points per ₹100",
     "eligibility": "Monthly income ₹25,000+",
     "perks": ["Lounge access", "Fuel waiver"],
-    "apply_link": "#"
+    "apply_link": "#",
+    "image_url": "https://cdn.yourcdn.com/icici-coral.png"
   },
   {
-    "name": "AU Small Finance Bank Zenith",
-    "issuer": "AU Bank",
+    "name": "AU Zenith",
+    "issuer": "AU Small Finance Bank",
     "joining_fee": 2999,
     "annual_fee": 2999,
     "reward_type": "Points",
     "reward_rate": "1.25% reward rate",
     "eligibility": "Monthly income ₹60,000+",
     "perks": ["Lounge access", "Travel concierge"],
-    "apply_link": "#"
+    "apply_link": "#",
+    "image_url": "https://cdn.yourcdn.com/au-zenith.png"
   },
   {
     "name": "IndusInd Platinum Aura",
@@ -107,10 +116,11 @@
     "reward_rate": "1.5% on groceries, fuel",
     "eligibility": "Monthly income ₹25,000+",
     "perks": ["Fuel surcharge waiver", "Dining discounts"],
-    "apply_link": "#"
+    "apply_link": "#",
+    "image_url": "https://cdn.yourcdn.com/indusind-platinum-aura.png"
   },
   {
-    "name": "HSBC Cashback Credit Card",
+    "name": "HSBC Cashback Card",
     "issuer": "HSBC",
     "joining_fee": 0,
     "annual_fee": 0,
@@ -118,18 +128,20 @@
     "reward_rate": "1.5% online, 1% offline",
     "eligibility": "Monthly income ₹30,000+",
     "perks": ["No annual fee", "Dining offers"],
-    "apply_link": "#"
+    "apply_link": "#",
+    "image_url": "https://cdn.yourcdn.com/hsbc-cashback.png"
   },
   {
-    "name": "IDFC FIRST Millennia",
-    "issuer": "IDFC Bank",
+    "name": "IDFC Millennia",
+    "issuer": "IDFC FIRST Bank",
     "joining_fee": 0,
     "annual_fee": 0,
     "reward_type": "Points",
     "reward_rate": "3x–10x reward points",
     "eligibility": "Monthly income ₹25,000+",
     "perks": ["Movie discounts", "Lounge access"],
-    "apply_link": "#"
+    "apply_link": "#",
+    "image_url": "https://cdn.yourcdn.com/idfc-millennia.png"
   },
   {
     "name": "Standard Chartered Smart",
@@ -140,7 +152,8 @@
     "reward_rate": "2% on online, 1% others",
     "eligibility": "Monthly income ₹30,000+",
     "perks": ["EMI conversion", "Dining offers"],
-    "apply_link": "#"
+    "apply_link": "#",
+    "image_url": "https://cdn.yourcdn.com/sc-smart.png"
   },
   {
     "name": "Kotak Royale Signature",
@@ -151,7 +164,8 @@
     "reward_rate": "4 points per ₹150",
     "eligibility": "Monthly income ₹50,000+",
     "perks": ["Airport lounge", "Dining offers"],
-    "apply_link": "#"
+    "apply_link": "#",
+    "image_url": "https://cdn.yourcdn.com/kotak-royale-signature.png"
   },
   {
     "name": "RBL ShopRite",
@@ -162,7 +176,8 @@
     "reward_rate": "2.5% on groceries",
     "eligibility": "Monthly income ₹20,000+",
     "perks": ["Fuel waiver", "Supermarket offers"],
-    "apply_link": "#"
+    "apply_link": "#",
+    "image_url": "https://cdn.yourcdn.com/rbl-shoprite.png"
   },
   {
     "name": "Yes Prosperity Edge",
@@ -173,7 +188,8 @@
     "reward_rate": "6 points per ₹200",
     "eligibility": "Monthly income ₹35,000+",
     "perks": ["Dining, travel perks"],
-    "apply_link": "#"
+    "apply_link": "#",
+    "image_url": "https://cdn.yourcdn.com/yes-prosperity-edge.png"
   },
   {
     "name": "HSBC Premier Mastercard",
@@ -184,10 +200,11 @@
     "reward_rate": "1 point per ₹100",
     "eligibility": "Premier customer",
     "perks": ["International lounge access"],
-    "apply_link": "#"
+    "apply_link": "#",
+    "image_url": "https://cdn.yourcdn.com/hsbc-premier-mastercard.png"
   },
   {
-    "name": "IDFC FIRST Wealth",
+    "name": "IDFC Wealth",
     "issuer": "IDFC FIRST Bank",
     "joining_fee": 0,
     "annual_fee": 0,
@@ -195,7 +212,8 @@
     "reward_rate": "3x–10x points",
     "eligibility": "Monthly income ₹60,000+",
     "perks": ["Golf access", "Lounge access"],
-    "apply_link": "#"
+    "apply_link": "#",
+    "image_url": "https://cdn.yourcdn.com/idfc-wealth.png"
   },
   {
     "name": "Axis Flipkart",
@@ -206,7 +224,8 @@
     "reward_rate": "5% on Flipkart, 1.5% others",
     "eligibility": "Monthly income ₹25,000+",
     "perks": ["Flipkart vouchers", "Dining offers"],
-    "apply_link": "#"
+    "apply_link": "#",
+    "image_url": "https://cdn.yourcdn.com/axis-flipkart.png"
   },
   {
     "name": "HDFC Diners Club Privilege",
@@ -215,8 +234,9 @@
     "annual_fee": 2500,
     "reward_type": "Points",
     "reward_rate": "4 points per ₹150",
-    "eligibility": "Monthly income ₹1,00,000+",
-    "perks": ["Lounge access", "Golf, Zomato Pro"],
-    "apply_link": "#"
+    "eligibility": "Monthly income ₹100,000+",
+    "perks": ["Lounge access", "Golf", "Zomato Pro"],
+    "apply_link": "#",
+    "image_url": "https://cdn.yourcdn.com/hdfc-diners-privilege.png"
   }
 ]

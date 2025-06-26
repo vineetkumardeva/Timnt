@@ -31,7 +31,20 @@ form.addEventListener("submit", async (e) => {
     });
 
     const data = await res.json();
-    resultDiv.innerHTML = `<pre>${data.recommendations}</pre>`;
+    if (data.recommendations && Array.isArray(data.recommendations)) {
+      resultDiv.innerHTML = data.recommendations.map(card => `
+        <div class="card-box">
+          <img src="${card.image_url}" alt="${card.name}" />
+          <h3>${card.name}</h3>
+          <p><strong>Why it fits:</strong> ${card.reason}</p>
+          <p><strong>Estimated Rewards:</strong> ${card.estimated_rewards}</p>
+          <a href="${card.apply_link}" target="_blank">Apply Now</a>
+        </div>
+      `).join("");
+    } else {
+      resultDiv.innerHTML = `<pre>${data.recommendations}</pre>`;
+    }
+
   } catch (err) {
     resultDiv.innerHTML = "❌ Error: " + err.message;
   }
