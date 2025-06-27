@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Credit Card Images</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 10px;
+      margin-bottom: 20px;
+      width: 300px;
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+    }
+    .broken::after {
+      content: "❌ Image failed to load";
+      color: red;
+      display: block;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Credit Card Image Debug</h1>
+  <div id="cards"></div>
+
+  <script>
+    const cards = [
+      {
+        "name": "HDFC Millennia",
+        "image_url": "https://www.hdfcbank.com/content/api/contentstream-id/723fb80a-2dde-42a3-9793-7ae1be57c87f/a6470e7a-ddb5-4512-a4a9-d628c97eb24e/Personal/Pay/Cards/Millennia%20Cards/Millennia%20Credit%20Card/Millennia-CC_new.png"
+      },
+      {
+        "name": "SBI SimplyCLICK",
+        "image_url": "https://cms-resources.groww.in/uploads/sbi_simplyclick_credit_card_66055f6cd0.png"
+      },
+      {
+        "name": "Axis Ace",
+        "image_url": "https://www.axisbank.com/images/default-source/default-album/ace-credit-card.jpg"
+      },
+      {
+        "name": "ICICI Amazon Pay",
+        "image_url": "https://m.media-amazon.com/images/G/31/img18/AmazonPay/Affordability/CBCC/Amazoncard_Final._CB570101839_.jpg"
+      },
+      {
+        "name": "HDFC Regalia",
+        "image_url": "https://www.hdfcbank.com/content/api/contentstream-id/723fb80a-2dde-42a3-9793-7ae1be57c87f/f7da2911-8309-4463-a6fe-b26521c94165/Personal/Pay/Cards/Credit%20Card/Credit%20Card%20Landing%20Page/Credit%20Cards/Super%20Premium/Regalia/regalia_banner1.png"
+      },
+      {
+        "name": "Axis Vistara Infinite",
+        "image_url": "https://bankkaro.com/blog/wp-content/uploads/2022/03/axis-bank-vistara-credit-card.jpg"
+      },
+      {
+        "name": "SBI Card ELITE",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMxJI3WaZVVm8xcGBZIc7IQsUaVQzJMfCaPA&s"
+      },
+      {
+        "name": "ICICI Coral Credit Card",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdsTPupTVApuuMcp41uli4brBsi7cj_o6_gQ&s"
+      },
+      {
+        "name": "AU Zenith",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHoZ1iXDiNsssBU0fm7XcyuL_ya7VgueD59g&s"
+      },
+      {
+        "name": "IndusInd Platinum Aura",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSBQYz-l_XtPLMOU_h4Kh_I6Vyggfl8wH3Mg&s"
+      },
+      {
+        "name": "HSBC Cashback Card",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmvQPgQKJuJCiiJ2N1oP7tzF05FoW1t_akYg&s"
+      },
+      {
+        "name": "IDFC Millennia",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu3D3F4f6u35T4Z-u9ucwDAmfobVnBEXGeyQ&s"
+      },
+      {
+        "name": "Standard Chartered Smart",
+        "image_url": "https://av.sc.com/in/content/images/in-scb-smart-cc-desktop-banner.jpg"
+      },
+      {
+        "name": "Kotak Royale Signature",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1SEj0CrdMAfxzHkN9LiBCKXxFJ-6tULhdPQ&s"
+      },
+      {
+        "name": "RBL ShopRite",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw5mhtd3CTkwtR5RK1kJy24URs0sb-QU7r-g&s"
+      },
+      {
+        "name": "Yes Prosperity Edge",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6D7VwzF4eWqwzSR8m-oDDUOX8WScOI795lw&s"
+      },
+      {
+        "name": "HSBC Premier Mastercard",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJmYebC9eIObjwi5JnJBKKeM_wHV7f1I5dYA&s"
+      },
+      {
+        "name": "IDFC Wealth",
+        "image_url": "https://static.bankbazaar.com/images/india/infographic/idfc-first-wealth-credit-card.webp"
+      },
+      {
+        "name": "Axis Flipkart",
+        "image_url": "https://images.goodreturns.in/img/2025/01/flipkart-axis-credit-card-1738320948.jpg"
+      },
+      {
+        "name": "HDFC Diners Club Privilege",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHbbaDUCpwSBuWXYUfT42eg14OyixTn80z2w&s"
+      }
+    ];
+
+    const container = document.getElementById("cards");
+
+    cards.forEach(card => {
+      const div = document.createElement("div");
+      div.className = "card";
+      const img = new Image();
+      img.src = card.image_url;
+      img.alt = card.name;
+      img.onerror = () => {
+        div.classList.add("broken");
+        img.remove();
+      };
+
+      div.innerHTML = `<h3>${card.name}</h3>`;
+      div.appendChild(img);
+      container.appendChild(div);
+    });
+  </script>
+</body>
+</html>
