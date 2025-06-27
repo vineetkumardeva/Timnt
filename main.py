@@ -35,11 +35,11 @@ prompt_template = ChatPromptTemplate.from_messages([
 def home():
     return render_template("index.html")
 
-@app.route("/test-images")
-def test_images():
-    with open("cards.json") as f:
-        cards = json.load(f)
-    return render_template("test.html", cards=cards)
+#@app.route("/test-images")
+#def test_images():
+#    with open("cards.json") as f:
+#        cards = json.load(f)
+#    return render_template("test.html", cards=cards)
 
 
 @app.route("/recommend", methods=["POST"])
